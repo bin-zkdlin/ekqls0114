@@ -3,6 +3,8 @@ from flask import Flask, request, render_template, redirect, url_for, abort
 import game
 import json
 
+import db.db
+
 app = Flask(__name__)
 
 @app.route('/')
