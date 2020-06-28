@@ -109,8 +109,8 @@ def move_site(site):
       return redirect(url_for('daum'))
     else:
         abort(404)
-@app.errorhandler(404) 
-def page_not_found(error): 
+@app.errorhandler(404)
+def page_not_found(error):
     return "페이지가 없습니다. URL를 확인 하세요", 404
 
 @app.route('/img')
